@@ -152,7 +152,26 @@ a:hover, a:active { color:#55a;text-decoration:underline; }
 <p><img class="weixin lightBorder" src="/img/weixin.jpg"></p>
 <div class="huizhou">扫一扫或者按住二维码识别关注微信</div>
 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
 
+
+
+
+<head>
+<script>
+function clear(){
+Source=document.body.firstChild.data;
+document.open();
+document.close();
+document.title="看不到源代码";
+document.body.innerHTML=Source;
+}</script>
+</head>
 
 </head>
 </div>
